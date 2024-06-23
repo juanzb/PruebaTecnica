@@ -18,7 +18,7 @@ const NowPlay = () => {
         {data.results.map((e,i) => {
           return (
             <div
-              className='m-3 bg-opacity-4 bg-slate-800 hover:bg-slate-700 cursor-pointer' 
+              className='m-3 bg-opacity-4 bg-slate-900 bg-opacity-50 hover:bg-slate-700 cursor-pointer' 
               key={i}
               onClick={handleClick}
               id={e.id}

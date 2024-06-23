@@ -18,15 +18,15 @@ const Upcoming = () => {
         {data.results.map((e,i) => {
           return (
             <div
-              className='m-3 bg-opacity-4 bg-slate-800 hover:bg-slate-700 cursor-pointer' 
+              className='m-3 bg-opacity-4 bg-slate-900 bg-opacity-50 hover:bg-slate-700 cursor-pointer' 
               key={i}
               onClick={handleClick}
               id={e.id}
             >
               <img className='p-3' src={`https://image.tmdb.org/t/p/original/${e.poster_path}`} alt="img-movie"/>
-              <div className='pl-3 pr-3 pb-2 grid grid-cols-1'>
-                  <b className='text-black text-xs uppercase'>{e.original_title}</b>
-                  <b className='text-yellow-300 text-xs' >Votos: {e.vote_average}</b>
+              <div className='pl-3 pr-3 pb-2 grid grid-cols-1 font-bold'>
+                  <b className='text-black text-xs uppercase '>{e.original_title}</b>
+                  <b className='text-yellow-300 text-xs ' >Votos: {e.vote_average}</b>
               </div>
             </div>
           )

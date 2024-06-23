@@ -22,7 +22,7 @@ const ListMovies = () => {
         {data.results.filter(movie => movie.poster_path ).map((movie,index) => {
           return (
             <div 
-              className='m-3 bg-opacity-4 bg-slate-800 hover:bg-slate-700 cursor-pointer' 
+              className='m-3 bg-opacity-4 bg-slate-900 bg-opacity-50 hover:bg-slate-700 cursor-pointer' 
               key={index}
               onClick={handleClick}
               id={movie.id}
@@ -30,7 +30,7 @@ const ListMovies = () => {
                 <img className='p-3' src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt="img-movie"/>
                 <div className='pl-3 pr-3 pb-2 grid grid-cols-1'>
                     <b className='text-black text-xs uppercase'>{movie.original_title}</b>
-                    <b className='text-gray-500 text-xs' >Votos: {movie.vote_average}</b>
+                    <b className='text-yellow-300 text-xs' >Votos: {movie.vote_average}</b>
                 </div>
             </div>
           )
