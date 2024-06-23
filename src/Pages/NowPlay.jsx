@@ -1,13 +1,13 @@
 import useFetch from '../components/UseFetch'
 import Loading from '../components/Loading'
 import { useNavigate } from 'react-router-dom';
-  
+
 const NowPlay = () => {
   const navigate = useNavigate()
   const { data, loading, error } = useFetch(`https://api.themoviedb.org/3/movie/now_playing`);
   if (loading) return <Loading />
   if (error) return <> Error to load the page</>
-  
+
   const handleClick = (e) => {
     navigate(`/movies/${e.currentTarget.id}`)
   };
