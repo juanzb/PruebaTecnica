@@ -4,7 +4,8 @@
 
 
 .fondo{
- background-color: rgba(14, 30, 62, 0.886); 
+ background-image: url('./assets/background-default.png');
+ backdrop-filter: brightness(20%) blur(2px);
 }
 
 ::-webkit-scrollbar {
