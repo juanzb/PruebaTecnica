@@ -1,23 +1,25 @@
 import { useContext } from "react"
 import { DataContext } from "../context/DataContext"
 import Loading from '../components/Loading'
+import { useNavigate } from 'react-router-dom';
 
 
 const ListMovies = () => {
+  const navigate = useNavigate()
   const {data, loading, error} = useContext(DataContext)
   if (loading) return <Loading />
   if (error) return <> Error to load the page</>
   
   
   const handleClick = (e) => {
-    console.log(e.currentTarget.id);
+    navigate(`/movies/${e.currentTarget.id}`)
   };
 
 
   return(
   <>
   { !data.results ? <></> :   
-      <div className='grid grid-cols-5 m-2 content-around'>
+      <div className='grid grid-cols-5 m-2 content-around mt-10 mb-10'>
         {data.results.map((e,i) => {
           return (
             <div 

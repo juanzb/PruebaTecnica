@@ -14,7 +14,7 @@ const TopRated = () => {
   
   const MoviesTopRated = () => {
     return( <>
-      <div className='grid grid-cols-5 m-2 content-around'>
+      <div className='grid grid-cols-5 m-2 content-around mt-10 mb-20'>
         {data.results.map((e,i) => {
           return (
             <div

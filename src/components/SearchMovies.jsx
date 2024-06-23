@@ -14,15 +14,15 @@ const SearchMovies = () => {
   };
 
   return (<>
-    <div className="w-full  flex justify-center mt-20 py-10 ">
+    <div className="w-full  flex justify-center mt-20 mb-20 py-10 ">
       <form className="w-full max-w-3xl" onSubmit={handleSubmit}>
-        <h1 className='w-full text-5xl justify-center flex mb-10'>Search Your Favorite Movie</h1>
+        <h1 className='w-full text-5xl justify-center flex mb-10 uppercase font-bold text-gray-400'>find your favorite movie</h1>
         <div className="flex items-center border-b bg-slate-600 rounded-full " >
           <input  
             type="text"
             onChange={(e) => setNameSearch(e.target.value) }
             placeholder="Search for movies..."
-            className="appearance-none bg-transparent border-none w-full text-gray-200 mr-3 py-1 px-2 leading-tight focus:outline-none"
+            className="appearance-none bg-transparent border-none w-full text-gray-200 mr-3 py-1 px-2 leading-tight focus:outline-none pl-5"
           />
           <button
             type="submit"
