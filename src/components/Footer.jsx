@@ -2,48 +2,44 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-        <footer className="relative w-full bottom-0 bg-gray-800 text-white py-10 ">
-          <div className="container mx-auto px-4">
-            <div className="flex flex-wrap justify-between">
-              <div className="w-full sm:w-auto text-center sm:text-left mb-4 sm:mb-0">
-                <h5 className="text-lg font-semibold">Movie App</h5>
-                <p className="text-gray-400">Your favorite movie database</p>
-              </div>
-              <div className="w-full sm:w-auto text-center sm:text-left">
-                <h5 className="text-lg font-semibold">Quick Links</h5>
-                <ul>
-                  <li>
-                    <Link to="#home" className="text-gray-400 hover:text-gray-200">Home</Link>
-                  </li>
-                  <li>
-                    <Link to="#about" className="text-gray-400 hover:text-gray-200">About</Link>
-                  </li>
-                  <li>
-                    <Link to="#contact" className="text-gray-400 hover:text-gray-200">Contact</Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="w-full sm:w-auto text-center sm:text-left">
-                <h5 className="text-lg font-semibold">Follow Us</h5>
-                <ul className="flex justify-center sm:justify-start space-x-4">
-                  <li>
-                    <Link to="#facebook" className="text-gray-400 hover:text-gray-200">Facebook</Link>
-                  </li>
-                  <li>
-                    <Link to="#twitter" className="text-gray-400 hover:text-gray-200">Twitter</Link>
-                  </li>
-                  <li>
-                    <Link to="#instagram" className="text-gray-400 hover:text-gray-200">Instagram</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="text-center text-gray-400">
-              &copy; 2024 Movie App. All rights reserved.
+    <footer className="bg-gray-800 text-gray-400 py-8">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-wrap">
+          <div className="w-full md:w-1/3 text-center md:text-left mb-4 md:mb-0">
+            <h2 className="text-2xl font-bold text-gray-400">MOVIES</h2>
+            <p className="mt-2">Find and explore your favorite movies and TV shows with our comprehensive database.</p>
+          </div>
+          <div className="w-full md:w-1/3 flex justify-center mb-4 md:mb-0">
+            <div className="grid grid-cols-1 text-center">
+            <h2 className="text-2xl font-bold text-gray-400 uppercase">social networks</h2>
+
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-300">
+              Facebook
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-300">
+              Twitter
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-300">
+              Instagran
+              </a>
             </div>
           </div>
-        </footer>
-      );
+          <div className="w-full md:w-1/3 text-center ">
+            <nav className=" grid grid-cols-1">
+            <h2 className="text-2xl font-bold text-gray-400 uppercase">Navigation</h2>
+              <Link to="/top-rated" className="hover:text-yellow-300">Top Rated</Link>
+              <Link to="/now-playing" className="hover:text-yellow-300">Now Playing</Link>
+              <Link to="/popular" className="hover:text-yellow-300">Popular</Link>
+              <Link to="/upcoming" className="hover:text-yellow-300">Upcoming</Link>
+            </nav>
+          </div>
+        </div>
+        <div className="border-t border-gray-700 mt-8 pt-4 text-center">
+          <p>&copy; 2024 Movies. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  )
     };
     
 export default Footer

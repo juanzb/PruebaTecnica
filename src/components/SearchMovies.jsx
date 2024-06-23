@@ -26,7 +26,7 @@ const SearchMovies = () => {
           />
           <button
             type="submit"
-            className="flex-shrink-0 bg-yellow-600 hover:bg-yellow-300 text-sm text-white py-1 px-2 rounded-full m-2"
+            className="flex-shrink-0 bg-yellow-500 hover:bg-yellow-300 text-sm text-white py-1 px-2 rounded-full m-2"
           >
             <img src={Lupa} className='w-6'></img>
           </button>
