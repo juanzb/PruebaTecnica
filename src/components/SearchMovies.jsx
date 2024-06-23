@@ -17,7 +17,7 @@ const SearchMovies = () => {
     <div className="w-full  flex justify-center mt-20 mb-20 py-10 ">
       <form className="w-full max-w-3xl" onSubmit={handleSubmit}>
         <h1 className='w-full text-5xl justify-center flex mb-10 uppercase font-bold text-gray-400'>find your favorite movie</h1>
-        <div className="flex items-center border-b bg-slate-600 rounded-full " >
+        <div className="flex items-center border-b bg-slate-600 bg-opacity-40 rounded-full " >
           <input  
             type="text"
             onChange={(e) => setNameSearch(e.target.value) }
