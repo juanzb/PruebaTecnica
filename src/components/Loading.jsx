@@ -4,7 +4,7 @@ const Loading = () => {
   return (<>
   <div className="grid grid-cols-1 w-full justify-items-center mb-20" >
     <img className="h-96" alt="Loading" src={ImgLoading} />
-    <h1 className="text-5xl font-bold text-gray-800" >Loading . . .</h1>
+    <h1 className="text-5xl font-bold text-slate-300" >Loading . . .</h1>
   </div>
   </>)
 }
