@@ -31,7 +31,8 @@ const Navbar = () => {
             "text-1xl text-gray-500 hover:text-black hover:bg-opacity-60 hover:bg-yellow-500 h-16 px-2 font-bold flex items-center" }>Upcoming</Link>
         </div>
         <Link to="/">
-          <div className="flex-shrink-0 bg-yellow-600 hover:bg-yellow-300 text-sm text-white py-1 px-2 rounded-full m-2" >
+          <div className={ location.pathname == "/" ? "flex-shrink-0 bg-yellow-300 text-sm text-white py-1 px-2 rounded-full m-2" :
+            "flex-shrink-0 bg-slate-500 hover:bg-yellow-300 text-sm text-white py-1 px-2 rounded-full m-2" }>
             <img src={Lupa} className='w-6'></img>
           </div>
         </Link>
