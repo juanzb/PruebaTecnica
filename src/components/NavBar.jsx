@@ -8,11 +8,11 @@ const Navbar = () => {
   <>
     <nav className="bg-gray-800 ">
       <div className="container mx-auto flex items-center justify-between">
-        <div className="flex-shrink-0">
+        <div className="ml-10">
           <Link to="/" className="text-3xl font-bold text-yellow-500">MOVIES</Link>
         </div>
 
-        <div className="hidden md:flex space-x-4 uppercase">
+        <div className="flex space-x-4 uppercase">
           <Link 
             to="TopRated"
             className={ location.pathname == "/TopRated" ? "text-1xl text-black bg-yellow-500 bg-opacity-70 h-16 px-2 font-bold flex items-center" : 
