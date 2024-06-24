@@ -6,7 +6,7 @@ const Navbar = () => {
   const location = useLocation()
   return (
   <>
-    <nav className="bg-gray-800 sticky w-full top-0">
+    <nav className="bg-gray-800 sticky w-full top-0 z-20">
       <div className="container mx-auto flex items-center justify-between">
         <div className="ml-10">
           <Link to="/" className="text-3xl font-bold text-yellow-500">MOVIES</Link>
